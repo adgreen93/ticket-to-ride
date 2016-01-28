@@ -1,0 +1,18 @@
+<h1> Howdy. </h1>
+
+<%= link_to 'Employee Schedules', controller: 'schedule' %>
+<br>
+<%= link_to 'New Schedule', new_schedule_path %>
+
+<p> Add Your Hours Here: </p>
+
+<p> Company Title: </p>
+<table>
+
+  <% @company.each do |company| %>
+    <tr>
+      <td><%= company.title %></td>
+    </tr>
+    <% end %>
+
+    </table>

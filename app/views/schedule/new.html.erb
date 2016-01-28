@@ -1,0 +1,24 @@
+
+<h1> New Schedule </h1>
+
+<%= form_for :schedule, url: schedule_index_path do |f| %>
+	<p>
+		<%= f.label :employee %><br>
+		<%= f.text_field :employee %>
+	</p>
+
+	<p>
+		<%= f.label :hours %><br>
+		<%= f.text_field :hours %>
+	</p>
+
+	<p>
+
+	<%= f.submit %>
+
+	</p>
+
+	<% end %>
+
+
+<%= link_to 'Back', schedule_index_path %>
