@@ -1,0 +1,29 @@
+<h1> Howdy. </h1>
+
+<p> Here's the list of all companies using Ticket to Ride. </p>
+<p> This will be a master account privledge. </p>
+
+<table>
+  <tr>
+    <th>Company</th>
+  </tr>
+ 
+  <% @company.each do |company| %>
+    <tr>
+      <td><%= company.title %></td>
+      <td><%= link_to 'Show', company_path(company) %></td>
+      <td><%= link_to 'Edit', edit_company_path(company) %></td>
+    </tr>
+
+<% end %>
+</table>
+
+<tr>
+<% @users.each do |users| %> 
+  <td><%= users.email %></td>
+  <td><%= users.salary %></td>
+  <td><%= users.status %></td>
+  <td><%= users.companies_id %></td>
+</tr>
+<% end %>
+</table>

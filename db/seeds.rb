@@ -6,4 +6,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-companyload = Company.create([{ title: 'AlexanderCo'}])
+companyload = Company.create([{ title: 'AlexanderCo', title: '432Ventures'}])
