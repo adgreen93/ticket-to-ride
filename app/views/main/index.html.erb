@@ -1,5 +1,13 @@
-<h1> Howdy. </h1>
 
-<%= link_to 'Employee Pay Periods', controller: 'schedule' %>
+<h1> Employee Information </h1>
+<div class="main">
+<!-- <%= link_to 'Employee Pay Periods', controller: 'schedule' %>
 <br>
 <%= link_to 'New Employee Pay Period', new_schedule_path %>
+<br> -->
+<% if user_signed_in? %>
+  Your pay rate is <strong><%= current_user.salary %></strong> hourly.
+  You are a  <strong><%= current_user.status %></strong> employee.
+  <% end %>
+
+</div>

@@ -2,9 +2,16 @@
 <h1> New Schedule </h1>
 
 <%= form_for :schedule, url: schedule_index_path do |f| %>
+
+	<p> 
+		<%= f.label :Company %><br>
+		<%= f.collection_select(:companies_id, Company.all, :title, :title) %>
+	</p>
+
 	<p>
-		<%= f.label :employee %><br>
-		<%= f.text_field :employee %>
+		<%= f.label :User %><br>
+		<%= f.collection_select(:users_id, User.all, :email, :email) %>
+
 	</p>
 
 	<p>
@@ -12,16 +19,7 @@
 		<%= f.text_field :hours %>
 	</p>
 
-	<p> 
-		<%= f.label :Company %><br>
-		<%= f.text_field :companies_id %>
-	</p>
-
-	<p>
-		<%= f.label :user %><br>
-		<%= f.text_field :users_id %>
-
-	<p>
+ 	<p>
 
 	<%= f.submit %>
 
