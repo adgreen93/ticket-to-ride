@@ -1,6 +1,6 @@
 == README
 
-![alt text](/Drawing (26).png "ticket to ride")
+![alt text](public/Drawing (26).png "Description goes here")
 
 This project is a web app for companies and employers to track attendance and pay for their employees. The finished product will enable users(Employees), to log in, input their hours for the week, and save them. Employers (Admins) are able to view the hours of all employees, as well as their Status(Full Time, Part Time, Per Diem, Contract Work), and their Salary. 
 
