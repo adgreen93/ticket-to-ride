@@ -1,6 +1,6 @@
 == README
 
-![alt tag](https://raw.githubusercontent.com/adgreen93/ticket-to-ride-scheduling/master/Drawing%20(26).png)
+![alt text](ticket-to-ride-scheduling/Drawing (26).png "ticket to ride")
 
 This project is a web app for companies and employers to track attendance and pay for their employees. The finished product will enable users(Employees), to log in, input their hours for the week, and save them. Employers (Admins) are able to view the hours of all employees, as well as their Status(Full Time, Part Time, Per Diem, Contract Work), and their Salary. 
 
